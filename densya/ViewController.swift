@@ -21,19 +21,19 @@ class ViewController: UIViewController {
         }
     
     @IBAction func densyaMove(_ sender: UISlider) {
-        updateLocation(degrees: CGFloat(sender.value) + 458)
+        updateLocation(degrees: CGFloat(sender.value) + 98)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        updateLocation(degrees: 458)
+        updateLocation(degrees: 98)
 
     }
 
     
     @IBAction func reset(_ sender: Any) {
-        updateLocation(degrees: 458)
+        updateLocation(degrees: 98)
         sliderOutlet.value = 0
     }
 }
